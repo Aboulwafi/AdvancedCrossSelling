@@ -1,0 +1,215 @@
+/**
+* 2007-2018 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2018 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+ /*
+	product heading style
+ */
+		.st-product-header {
+		  box-sizing: border-box;
+		  font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		  font-size: 22px;
+		  font-style: italic;
+		  font-weight: 300;
+		  color: #393939;
+		  margin-top: 20px;
+		  line-height: 1.1;
+		  margin-bottom: 10px; 
+		  text-transform: uppercase;
+		}
+	.st-subtitle-header {
+		  box-sizing: border-box;
+		  font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		  font-size: 26px;
+		  font-style: italic;
+		  line-height: 1.1;
+		  font-weight: 700;
+		  margin-top: 20px;
+		  margin-bottom: 10px;
+		  color: #393939;
+		}
+	.st-paragraph-header {
+	  box-sizing: border-box;
+	  font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	  font-size: 18px;
+	  font-style: italic;
+	  font-weight: 700;
+	  color: #0082c3;
+	  line-height: 1.1;
+	  margin-top: 20px;
+	  margin-bottom: 10px;
+	  text-transform: uppercase;
+	}
+	
+	.st-btn,
+.st-btn:after,
+.st-btn:before {
+  box-sizing: border-box
+}
+.st-btn{
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 10px 35px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-family: "Roboto Condensed",Helvetica,"Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase
+}
+.st-btn.disabled {
+  cursor: not-allowed;
+  opacity: .5;
+  box-shadow: none!important
+}
+.st-btn:active:not(.disabled):before {
+  display: none
+}
+.st-btn.st-btn-left:after,
+.st-btn.st-btn-right:after {
+  position: absolute;
+  display:inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 1;
+  font-family: Material-Design-Iconic-Font;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased
+}
+.st-btn:active,
+.st-btn:hover {
+  text-decoration: none;
+  outline: 0
+}
+.st-btn:hover:not(.disabled):before {
+  z-index: -1;
+  width: 100%!important;
+  transform: none!important
+}
+
+.st-btn.st-btn-left:before {
+  position: absolute;
+  top: 0;
+  width: 36px;
+  height: 100%;
+  content: "";
+  background: #fff;
+  opacity: .8
+}
+.st-btn.st-btn-left:after {
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%)
+}
+.st-btn.st-btn-left {
+  padding: 10px 35px 10px 51px
+}
+.st-btn.st-btn-left:before {
+  left: 0;
+  transform: skew(10deg);
+  transform-origin: 0 100% 0
+}
+.st-btn.st-btn-left:after {
+  left: 12px;
+  content: "<"
+}
+
+.st-btn.st-btn-right:before {
+  position: absolute;
+  top: 0;
+  width: 36px;
+  height: 100%;
+  content: "";
+  background: #fff;
+  opacity: .8
+}
+.st-btn.st-btn-right:after {
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%)
+}
+.st-btn.st-btn-right {
+  padding: 10px 51px 10px 35px
+}
+.st-btn.st-btn-right:before {
+  right: 0;
+  transform: skew(-10deg);
+  transform-origin: 100% 100% 0
+}
+.st-btn.st-btn-right:after {
+  right:12px;
+  content:">"
+}
+
+.st-btn.st-btn-yellow {
+  background:linear-gradient(#fef63a 0,#eec423 100%);
+  box-shadow:rgba(0,0,0,.0901961) 0 1px 2px 0
+}
+.st-btn.st-btn-yellow:hover {
+  box-shadow:rgba(0,0,0,.117647) 0 1px 2px 0
+}
+.st-btn.st-btn-yellow:active:not(.disabled) {
+  background:#eec423;
+  box-shadow:none
+}
+.st-btn.st-btn-yellow,
+.st-btn.st-btn-yellow:active,
+.st-btn.st-btn-yellow:hover {
+  color:#393939
+}
+.st-btn.st-btn-yellow::before {
+  opacity:.3
+}
+
+.st-btn.st-btn-left.st-btn-small:after,
+.st-btn.st-btn-right.st-btn-small:after {
+  font-size: 18px
+}
+.st-btn.st-btn-left.st-btn-small:after {
+  left: 9px
+}
+.st-btn.st-btn-small {
+  font-size: 14px
+}
+.st-btn.st-btn-small.st-btn-left {
+  padding: 5px 25px 5px 37px
+}
+.st-btn.st-btn-small.st-btn-right {
+  padding: 5px 37px 5px 25px
+}
+.st-btn.st-btn-small:before {
+  width: 26px
+}
+.st-btn.st-btn-right.st-btn-small:after {
+  right: 9px
+}
